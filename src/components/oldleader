@@ -1,0 +1,119 @@
+import React from 'react';
+import { ab, ck, cc, slash } from '../assets';
+import { styles } from '../styles';
+import { motion } from 'framer-motion';
+import { SectionWrapper } from '../hoc';
+import { textVariant } from '../utils/motion';
+
+const Leaders = () => {
+  return (
+    <section className='relative w-full h-[600px] flex justify-center items-center'>
+      <motion.div
+        variants={textVariant()}
+        className={`${styles.paddingX} max-w-7xl mx-auto flex flex-col items-center gap-5`}
+      >
+        <div className='flex flex-col items-center'>
+          <h1 className={`${styles.heroHeadText3} text-center -mt-20`}>
+            LEADERSHIP
+          </h1>
+          <img src={slash} alt='Slash' style={{ width: '300px', height: '20px' }} />
+        </div>
+        <section className='flex flex-col md:flex-row justify-center items-center gap-x-16 text-white mt-20'>
+
+          {/* Chris Kendall */}
+          <div className='w-full md:w-[400px] h-[420px] bg-transparent cursor-pointer group perspective'>
+            <div className='relative preserve-3d group-hover:my-rotate-y-180 w-full h-full duration-1000'>
+              <div className='absolute backface-hidden w-full h-full '>
+                <img src={ck} alt='ck' className='w-[100%] h-[100%] relative z-[5] rounded-full' />
+              </div>
+              <div className='absolute my-rotate-y-180 backface-hidden w-full h-full bg-white overflow-hidden'>
+                <div className='text-center flex flex-col items-center justify-center h-full text-gray-800 px-2 pb-24'>
+                  <h1 className={`${styles.positionHeading}`}>Chris Kendall</h1>
+                  <p className={`${styles.positionHeading2} my-2`}>CEO</p>
+
+                </div>
+              </div>
+            </div>
+            <a href='https://www.linkedin.com/in/cdkendall/' target='_blank' rel='noopener noreferrer' className='text-center flex flex-col items-center justify-center '>
+              <button className='bg-teal-500 px-6 py-2 font-semibold text-white rounded-full absolute -bottom-20 delay-300 duration-500 group-hover:bottom-20 scale-0 group-hover:scale-125'>
+                Visit Profile
+              </button>
+            </a>
+            <div className='absolute left-0 w-full py-1 bg-white text-center group-hover:hidden bg-transparent'>
+              <h3 className={`${styles.positionHeading3} mt-8`}>Chris Kendall</h3>
+              <p className={`${styles.positionHeading4}`}>CEO</p>
+            </div>
+            <div className='mt-40'>
+            <p className={`${styles.paragraph6} hidden md:block`}>
+                Chris' passion for clients and accounting started at Price Waterhouse in the early ’90s. As a chartered accountant, Chris has worked with businesses globally to drive financial strategy and performance, bringing a ruthless focus on improving performance and efficiency and driving down costs. He’s a small business advocate, always striving to give his clients insight into their business performance.
+            </p>
+            </div>
+          </div>
+
+          {/* Andrew Bursill */}
+          <div className='w-full md:w-[400px] h-[420px] bg-transparent cursor-pointer group perspective'>
+            <div className='relative preserve-3d group-hover:my-rotate-y-180 w-full h-full duration-1000'>
+              <div className='absolute backface-hidden w-full h-full'>
+                <img src={ab} alt='ab' className='w-[100%] h-[100%] relative z-[5] rounded-full' />
+              </div>
+              <div className='absolute my-rotate-y-180 backface-hidden w-full h-full bg-white overflow-hidden'>
+                <div className='text-center flex flex-col items-center justify-center h-full text-gray-800 px-2 pb-24'>
+                  <h1 className={`${styles.positionHeading}`}>Andrew Bursill</h1>
+                  <p className={`${styles.positionHeading2} my-2`}>Director</p>
+                </div>
+              </div>
+            </div>
+            <a href='https://www.linkedin.com/in/andrew-bursill-09b39024/' target='_blank' rel='noopener noreferrer' className='text-center flex flex-col items-center justify-center'>
+              <button className='bg-teal-500 px-6 py-2 font-semibold text-white rounded-full absolute -bottom-20 delay-500 duration-500 group-hover:bottom-20 scale-0 group-hover:scale-125'>
+                Visit Profile
+              </button>
+            </a>
+            <div className='absolute left-0 w-full py-1 bg-white text-center group-hover:hidden bg-transparent'>
+              <h3 className={`${styles.positionHeading3} mt-8`}>Andrew Bursill</h3>
+              <p className={`${styles.positionHeading4}`}>Director</p>
+
+            </div>
+            <div className='mt-40'>
+            <p className={`${styles.paragraph6} hidden md:block`}>
+                    As a chartered accountant, Andrew’s track record of success and financial leadership is a result of over 20 years of providing outsourced CFO services, principally with ASX-listed businesses. During this time, Andrew worked across many different industry sectors, including fintech, SaaS, mineral exploration, financial services, biotechnology, retail and FMCG.
+            </p>
+            </div>
+          </div>
+
+          {/* Chris Corpuz */}
+          <div className='w-full md:w-[400px] h-[420px] bg-transparent cursor-pointer group perspective'>
+            <div className='relative preserve-3d group-hover:my-rotate-y-180 w-full h-full duration-1000'>
+              <div className='absolute backface-hidden w-full h-full'>
+                <img src={cc} alt='cc' className='w-[100%] h-[100%] relative z-[5] rounded-full' />
+              </div>
+              <div className='absolute my-rotate-y-180 backface-hidden w-full h-full bg-white overflow-hidden'>
+                <div className='text-center flex flex-col items-center justify-center h-full text-gray-800 px-2 pb-24'>
+                  <h1 className={`${styles.positionHeading}`}>Chris Corpuz</h1>
+                  <p className={`${styles.positionHeading2} my-2`}>Director of Operations</p>
+
+                </div>
+              </div>
+            </div>
+            <a href='https://www.linkedin.com/in/chris-corpuz-85809410/' target='_blank' rel='noopener noreferrer' className='text-center flex flex-col items-center justify-center'>
+              <button className='bg-teal-500 px-6 py-2 font-semibold text-white rounded-full absolute -bottom-20 delay-500 duration-500 group-hover:bottom-20 scale-0 group-hover:scale-125'>
+                Visit Profile
+              </button>
+            </a>
+            <div className='absolute left-0 w-full py-1 bg-white text-center group-hover:hidden bg-transparent'>
+              <h3 className={`${styles.positionHeading3} mt-8`}>Chris Corpuz</h3>
+              <p className={`${styles.positionHeading4}`}>Director of Operations</p>
+            </div>
+            <div className='mt-40'>
+                    <p className={`${styles.paragraph6} hidden md:block`}>
+                    Chris is an expert in delivering shared services for global companies. Based in Manila, Chris leads the A-Team by combining his passion for people and delivering high-quality services. With his relentless focus on operational excellence at every step, Chris empowers the A-Team to provide exceptional service.
+                  </p>
+            </div>s
+          </div>
+
+        </section>
+      </motion.div>
+    </section>
+  );
+};
+
+export default SectionWrapper(Leaders);

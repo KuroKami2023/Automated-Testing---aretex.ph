@@ -1,0 +1,23 @@
+
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInAnimation 2s ease forwards;
+  }
+  
+  @keyframes fadeInAnimation {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .card {
+    perspective: 8000px;
+    cursor: pointer;
+    transition: transform 2s;
+  }
+  
+  .card:hover {
+    transform: translateY(-5px) rotateX(3deg) rotateY(3deg);
+  }
