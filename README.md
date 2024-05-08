@@ -5,3 +5,4 @@ To run Automated Testing
   -`npx cypress open`
 
 # **DAILY UPDATES**
+`#0969DA`
