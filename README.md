@@ -3,3 +3,5 @@ Make sure to install dependencies
 
 To run Automated Testing
   -`npx cypress open`
+
+# **DAILY UPDATES**
