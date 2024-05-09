@@ -21,4 +21,10 @@ To run Automated Testing
     - Added code for testing the contents of the home page of aretex.ph.
     - Gained insights and ideas from mentor/team.
     - Added code for testing and checking the contents of the About page of aretex.ph.
-    - Added code for logging the testing time/duration finished
+    - Added code for logging the testing time/duration finished.
+      
+- `05-09-2024`
+    - Received Final Assignment: Robotic Process Automation (RPA)
+    - Tried TryHackMe for learning cyber security.
+    - Adding codes for testing About page of aretex.ph (continuation).
+    - Finished Adding code for BASIC testing of aretex.ph.
